@@ -1,0 +1,163 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    background: #f9faff;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ===== HERO HEADER ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.25)),
+                url('https://i.pinimg.com/736x/36/53/32/365332079e19627603a7fcc68161b055.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 70px;
+    margin-right: 12px;
+    border-radius: 10px;
+}
+
+.nome-site {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.10;
+}
+
+/* BOTÃO NAV */
+.btn-cta {
+    background: #48c4ff;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background: #32a7df;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 14px 28px;
+    background: #48c4ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background: #32a7df;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(150, 180, 200, 0.18);
+}
+
+/* ===== ESPÉCIES ===== */
+.species-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background: #eef6ff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(150, 180, 200, 0.1);
+}
+
+.species-card img {
+    width: 190px;
+    border-radius: 14px;
+    margin-right: 20px;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #d8ecff;
+    margin-top: 50px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .species-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .species-card img {
+        margin-bottom: 10px;
+    }
+}
